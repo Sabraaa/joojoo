@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD
 // Data needed for a later exercise
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
@@ -27,3 +28,20 @@ const restaurant = {
     },
   },
 };
+=======
+const sabrasphere ={
+    firstName: "Sabra",
+    year: 2000,
+    calcAge: function () {
+        console.log(this);
+        console.log(2040-this.year)
+    console.log("first")
+    },
+    greet:()=>{
+        console.log(`hey${this.firstName}`)
+    }
+}
+sabrasphere.greet()
+sabrasphere.calcAge()
+console.log(this)
+>>>>>>> origin/main
