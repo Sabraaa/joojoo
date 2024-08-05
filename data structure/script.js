@@ -36,6 +36,18 @@ const {
 } = restaurant;
 console.log('1: ', restaurantName, '2: ', hours, '3: ', tags);
 
+//setting default values
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters)
+
+
+
+
+
+
+
+
+
 
 const nested = [2, 4, [5, 6]];
 // const [i, , j] = nested;
