@@ -11,7 +11,9 @@ const restaurant = {
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[first]]
+  },
   openingHours: {
     thu: {
       open: 12,
@@ -28,17 +30,19 @@ const restaurant = {
   },
 };
 
-const arr = [1, 2, 3];
-const a = arr[0];
-const b = arr[1];
-const c = arr[2];
-const [x, y, z] = arr;
-console.log(x, y, z, a, b, c, arr);
-let [first, , second] = restaurant.categories;
-console.log(first, second);
 
-[first, , second] = [second, , first];
-console.log(first, second);
+const nested = 
+// const arr = [1, 2, 3];
+// const a = arr[0];
+// const b = arr[1];
+// const c = arr[2];
+// const [x, y, z] = arr;
+// console.log(x, y, z, a, b, c, arr);
+// let [first, , second] = restaurant.categories;
+// console.log(first, second);
+
+// [first, , second] = [second, , first];
+// console.log(first, second);
 
 // const temp = first;
 // first = second;
