@@ -38,12 +38,15 @@ console.log('1: ', restaurantName, '2: ', hours, '3: ', tags);
 
 //setting default values
 const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters)
+console.log(menu, starters);
 
+// mutating variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
 
-
-
-
+({a,b}= obj)
+console.log(a,b);
 
 
 
