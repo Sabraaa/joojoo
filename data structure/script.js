@@ -27,20 +27,12 @@ const restaurant = {
     },
   },
 };
-const sabrasphere ={
-    firstName: "Sabra",
-    year: 2000,
-    calcAge: function () {
-        console.log(this);
-        console.log(2040-this.year)
-    console.log("first")
-    },
-    greet:()=>{
-        console.log(`hey${this.firstName}`)
-    }
-}
-sabrasphere.greet()
-sabrasphere.calcAge()
-console.log(this)
 
-
+const arr = [1, 2, 3];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+const [x, y, z] = arr;
+console.log(x, y, z, a, b, c, arr);
+const [, first, , second] = restaurant.categories;
+console.log(first, second);
