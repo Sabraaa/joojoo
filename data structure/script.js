@@ -29,15 +29,22 @@ const restaurant = {
     },
   },
 };
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log('1: ', restaurantName, '2: ', hours, '3: ', tags);
+
 
 const nested = [2, 4, [5, 6]];
 // const [i, , j] = nested;
 const [i, , [j, k]] = nested;
-console.log(i, j, k);
+// console.log(i, j, k);
 
 //default values
-const [p=1, q=1, r=1] = [8, 9];
-console.log(p, q, r);
+const [p = 1, q = 1, r = 1] = [8, 9];
+// console.log(p, q, r);
 
 // const arr = [1, 2, 3];
 // const a = arr[0];
