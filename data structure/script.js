@@ -29,6 +29,7 @@ const restaurant = {
     },
   },
 };
+
 const {
   name: restaurantName,
   openingHours: hours,
@@ -83,3 +84,9 @@ const badNewArr= [1,2,arr[0], arr[1] , arr[2]]
 
 const newArr = [1,2, ...arr]
 console.log(newArr)
+
+//copy arr
+const mainManuCopy=[...restaurant.mainMenu]
+//join 2 arrays
+const mergeMenu = [...restaurant.mainMenu ,...restaurant.starterMenu]
+console.log(mergeMenu)
