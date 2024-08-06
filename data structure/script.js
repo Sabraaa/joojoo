@@ -51,7 +51,7 @@ const obj = { a: 23, b: 7, c: 14 };
 const {
   fri: { open: qq },
 } = hours;
-console.log(qq);
+// console.log(qq);
 
 const nested = [2, 4, [5, 6]];
 // const [i, , j] = nested;
@@ -77,3 +77,9 @@ const [p = 1, q = 1, r = 1] = [8, 9];
 // const temp = first;
 // first = second;
 // second = temp;
+
+const arr = [7,8,9]
+const badNewArr= [1,2,arr[0], arr[1] , arr[2]]
+
+const newArr = [1,2, ...arr]
+console.log(newArr)
