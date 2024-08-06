@@ -28,7 +28,19 @@ const restaurant = {
       close: 24,
     },
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`pasta with ${ing1}, ${ing2} and ${ing3}`);
+  },
 };
+
+// const ingredients = [
+//   prompt("Let's make a pasta! ingredient 1?"),
+//   prompt('Great! ingredient 2?'),
+//   prompt('Allmost there! ingredient 3?'),
+// ];
+// console.log(ingredients)
+// restaurant.orderPasta(...ingredients)
+
 
 const {
   name: restaurantName,
@@ -79,14 +91,18 @@ const [p = 1, q = 1, r = 1] = [8, 9];
 // first = second;
 // second = temp;
 
-const arr = [7,8,9]
-const badNewArr= [1,2,arr[0], arr[1] , arr[2]]
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 
-const newArr = [1,2, ...arr]
-console.log(newArr)
+const newArr = [1, 2, ...arr];
+console.log(newArr);
 
 //copy arr
-const mainManuCopy=[...restaurant.mainMenu]
+const mainManuCopy = [...restaurant.mainMenu];
 //join 2 arrays
-const mergeMenu = [...restaurant.mainMenu ,...restaurant.starterMenu]
-console.log(mergeMenu)
+const mergeMenu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(mergeMenu)
+
+//objects
+const newResturaunt = {...restaurant, founder: "sabra", foundYear:2017 }
+// console.log(newResturaunt)
