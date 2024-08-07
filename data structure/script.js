@@ -32,6 +32,24 @@ const restaurant = {
     console.log(`pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
 };
+const rest1 = {
+  name: 'Capri',
+  numGuest: 0,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  owner: 'Giovanni Rossi',
+};
+
+// rest1.numGuest = rest1.numGuest || 10;
+// rest2.numGuest = rest2.numGuest || 10;
+
+rest1.numGuest??=10
+rest2.numGuest||=10
+console.log(rest1)
+console.log(rest2)
+
 
 // const ingredients = [
 //   prompt("Let's make a pasta! ingredient 1?"),
@@ -40,7 +58,6 @@ const restaurant = {
 // ];
 // console.log(ingredients)
 // restaurant.orderPasta(...ingredients)
-
 
 const {
   name: restaurantName,
@@ -95,7 +112,7 @@ const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 
 const newArr = [1, 2, ...arr];
-console.log(newArr);
+// console.log(newArr);
 
 //copy arr
 const mainManuCopy = [...restaurant.mainMenu];
@@ -104,5 +121,5 @@ const mergeMenu = [...restaurant.mainMenu, ...restaurant.starterMenu];
 // console.log(mergeMenu)
 
 //objects
-const newResturaunt = {...restaurant, founder: "sabra", foundYear:2017 }
+const newResturaunt = { ...restaurant, founder: 'sabra', foundYear: 2017 };
 // console.log(newResturaunt)
