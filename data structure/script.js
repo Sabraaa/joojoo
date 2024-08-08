@@ -29,7 +29,7 @@ const restaurant = {
     },
   },
   orderPasta: function (ing1, ing2, ing3) {
-    console.log(`pasta with ${ing1}, ${ing2} and ${ing3}`);
+    // console.log(`pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
 };
 const rest1 = {
@@ -47,8 +47,8 @@ const rest2 = {
 
 rest1.numGuest??=10
 rest2.numGuest||=10
-console.log(rest1)
-console.log(rest2)
+// console.log(rest1)
+// console.log(rest2)
 
 
 // const ingredients = [
@@ -123,3 +123,70 @@ const mergeMenu = [...restaurant.mainMenu, ...restaurant.starterMenu];
 //objects
 const newResturaunt = { ...restaurant, founder: 'sabra', foundYear: 2017 };
 // console.log(newResturaunt)
+
+
+
+
+
+
+
+
+const game = { 
+    team1: 'Bayern Munich', 
+    team2: 'Borrussia Dortmund', 
+    players: [ 
+      [ 
+        'Neuer', 
+        'Pavard', 
+        'Martinez', 
+        'Alaba', 
+        'Davies', 
+        'Kimmich', 
+        'Goretzka', 
+        'Coman', 
+        'Muller', 
+        'Gnarby', 
+        'Lewandowski', 
+      ], 
+      [ 
+        'Burki', 
+        'Schulz', 
+        'Hummels', 
+        'Akanji', 
+        'Hakimi', 
+        'Weigl', 
+        'Witsel', 
+        'Hazard', 
+        'Brandt', 
+        'Sancho', 
+        'Gotze', 
+      ], 
+    ], 
+    score: '4:0', 
+    scored: ['Lewandowski', 'Gnarby', 'Lewandowski',  
+    'Hummels'], 
+    date: 'Nov 9th, 2037', 
+    odds: { 
+      team1: 1.33, 
+      x: 3.25, 
+      team2: 6.5, 
+    }, 
+  }; 
+  
+  const [player1,player2]= game.players
+//   const player1=[...game.players]
+//   const player2=[...game.players]
+console.log(player1)
+console.log(player2)
+
+const [gk1, ...fieldPlayers1] = player1
+const [gk2, ...fieldPlayers2] = player2
+
+
+console.log(gk1)
+console.log(fieldPlayers1)
+console.log(gk2)
+console.log(fieldPlayers2)
+
+const [allPlayers]= game
+console.log(allPlayers)
