@@ -43,8 +43,13 @@ const rest2 = {
 };
 
 const orderSet = new Set(['sag', 'gorbi', 'gorbi', 'khar', 'sag', 'gorbi']);
+console.log(orderSet);
+console.log(new Set('Sabra'));
+console.log(orderSet.size);
+console.log(orderSet.has('sag'));
+orderSet.add('meow')
 console.log(orderSet)
-
+for(const order of orderSet) console.log(order)
 // const allMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 // for
 // rest1.numGuest = rest1.numGuest || 10;
