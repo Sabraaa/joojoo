@@ -4,6 +4,11 @@
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
+const airline = 'TAP air Portuagal';
+const plane = 'A320';
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ')+1))
+
 // Data needed for first part of the section
 const restaurant = {
   name: 'Classico Italiano',
@@ -32,26 +37,24 @@ const restaurant = {
     // console.log(`pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
 };
-const rest1 = {
-  name: 'Capri',
-  numGuest: 0,
-};
 
-const rest2 = {
-  name: 'La Piazza',
-  owner: 'Giovanni Rossi',
-};
+// const rest1 = {
+//   name: 'Capri',
+//   numGuest: 0,
+// };
 
+// const rest2 = {
+//   name: 'La Piazza',
+//   owner: 'Giovanni Rossi',
+// };
 
-const rest = new Map();
-rest.set('name', 'sabrasphere')
+// const rest = new Map();
+// rest.set('name', 'sabrasphere')
 
-rest.set(1,'amat')
-rest.set(2,'un yeki amat')
+// rest.set(1,'amat')
+// rest.set(2,'un yeki amat')
 
-console.log(rest)
-
-
+// console.log(rest)
 
 // const orderSet = new Set(['sag', 'gorbi', 'gorbi', 'khar', 'sag', 'gorbi']);
 // console.log(orderSet);
@@ -76,11 +79,6 @@ console.log(rest)
 // console.log([...staffSet])
 // console.log(`my full name has ${new Set('SabraAkhavanPaskiyabi').size} unique letters`)
 // const allMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-
-
-
-
-
 
 // rest1.numGuest = rest1.numGuest || 10;
 // rest2.numGuest = rest2.numGuest || 10;
