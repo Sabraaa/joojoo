@@ -47,9 +47,25 @@ console.log(orderSet);
 console.log(new Set('Sabra'));
 console.log(orderSet.size);
 console.log(orderSet.has('sag'));
-orderSet.add('meow')
-console.log(orderSet)
-for(const order of orderSet) console.log(order)
+orderSet.add('meow');
+console.log(orderSet);
+for (const order of orderSet) console.log(order);
+
+
+const staff = [
+  'waiter',
+  'chef',
+  'waitress',
+  'waiter',
+  'manager',
+  'chef',
+  'waitress',
+];
+const staffSet = new Set(staff)
+console.log(staffSet)
+console.log(`there is ${staffSet.size} job positions here in this restaurant.`)
+console.log([...staffSet])
+console.log(`my full name has ${new Set('SabraAkhavanPaskiyabi').size} unique letters`)
 // const allMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 // for
 // rest1.numGuest = rest1.numGuest || 10;
