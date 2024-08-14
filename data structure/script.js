@@ -42,13 +42,16 @@ const rest2 = {
   owner: 'Giovanni Rossi',
 };
 
-const allMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-for
+const orderSet = new Set(['sag', 'gorbi', 'gorbi', 'khar', 'sag', 'gorbi']);
+console.log(orderSet)
+
+// const allMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for
 // rest1.numGuest = rest1.numGuest || 10;
 // rest2.numGuest = rest2.numGuest || 10;
 
-rest1.numGuest ??= 10;
-rest2.numGuest ||= 10;
+// rest1.numGuest ??= 10;
+// rest2.numGuest ||= 10;
 // console.log(rest1)
 // console.log(rest2)
 
