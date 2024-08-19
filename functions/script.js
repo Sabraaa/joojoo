@@ -17,13 +17,27 @@ const sabra = {
   name: 'sabra akhavan',
   passport: 123456789,
 };
-const checkIn = function (flightNum, passenger) {
-    flightNum = "LH999"
-    passenger.name="ms. " + passenger.name
-    if (passenger.passport===123456789) {
-        alert('Check in')
-    }else[
-        alert('Wrong passport')
-    ]
+// const checkIn = function (flightNum, passenger) {
+//     flightNum = "LH999"
+//     passenger.name="ms. " + passenger.name
+//     if (passenger.passport===123456789) {
+//         alert('Check in')
+//     }else[
+//         alert('Wrong passport')
+//     ]
+// }
+
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLowercase();
+};
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join();
+};
+
+
+const transformer = function (str, fn){
+console.log(`transformed str: ${fn(str)}`)
+
 }
-checkIn(flight, sabra)
+transformer("hey idiot!", upperFirstWord)
