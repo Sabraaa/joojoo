@@ -27,17 +27,31 @@ const sabra = {
 //     ]
 // }
 
-const oneWord = function (str) {
-  return str.replace(/ /g, '').toLowercase();
+// const oneWord = function (str) {
+//   return str.replace(/ /g, '').toLowercase();
+// };
+// const upperFirstWord = function (str) {
+//   const [first, ...others] = str.split(' ');
+//   return [first.toUpperCase(), ...others].join();
+// };
+
+// const transformer = function (str, fn){
+// console.log(`transformed str: ${fn(str)}`)
+
+// }
+// transformer("hey idiot!", upperFirstWord)
+
+const greet = greeting => {
+  return name => {
+    console.log(`${greeting} ${name}`);
+  };
 };
-const upperFirstWord = function (str) {
-  const [first, ...others] = str.split(' ');
-  return [first.toUpperCase(), ...others].join();
-};
 
-
-const transformer = function (str, fn){
-console.log(`transformed str: ${fn(str)}`)
-
-}
-transformer("hey idiot!", upperFirstWord)
+// const greet = function(greeting) {
+//   return function (name){
+//     console.log(`${greeting} ${name}`)
+//   }
+// }
+greet('salam')('sabra');
+const greeterHi = greet('Hi');
+greeterHi('Steven');
