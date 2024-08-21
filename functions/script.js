@@ -41,17 +41,34 @@ const sabra = {
 // }
 // transformer("hey idiot!", upperFirstWord)
 
-const greet = greeting => {
-  return name => {
-    console.log(`${greeting} ${name}`);
-  };
-};
+// const greet = greeting => {
+//   return name => {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
 
 // const greet = function(greeting) {
 //   return function (name){
 //     console.log(`${greeting} ${name}`)
 //   }
 // }
-greet('salam')('sabra');
-const greeterHi = greet('Hi');
-greeterHi('Steven');
+// greet('salam')('sabra');
+// const greeterHi = greet('Hi');
+// greeterHi('Steven');
+
+// const addTax = (rate, value) => {
+//   return value + value * rate;
+// };
+// console.log(addTax(10, 200));
+
+// const addVAT = addTax.bind(null, 10)
+
+// console.log(addVAT(200))
+
+const addTax = function (value) {
+ const addVAT = function () {
+    return value + value * 0.1
+  };
+  return addVAT()
+};
+console.log(addTax(200))
