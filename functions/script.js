@@ -110,7 +110,6 @@ const sabra = {
 // poll.displayResults.call({ answers: [5, 2, 3] }, 'string');
 // poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'string');
 
-
 // const runOnce = function (){
 //   console.log('just once')
 // }
@@ -119,3 +118,37 @@ const sabra = {
 // }())
 
 // (() => {console.log("only once but arrowed")})();
+
+// const secureBooking = function () {
+//   let passengerCount = 0;
+
+//   return function () {
+//     passengerCount++;
+//     console.log(`${passengerCount} passengers`);
+//   };
+// };
+// const booker = secureBooking();
+// booker()
+// booker()
+// booker()
+// console.dir(booker)
+
+let f;
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(a * 2);
+  };
+};
+const h = function () {
+  const b = 777;
+  f = function () {
+    console.log(b * 2);
+  };
+};
+g();
+f();
+h()
+f()
+g()
+f()
