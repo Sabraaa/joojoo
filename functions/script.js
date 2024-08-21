@@ -153,13 +153,21 @@ const sabra = {
 // g()
 // f()
 
-const boardPassengers = function (n, wait) {
-  const perGroup = n / 3;
-  setTimeout(function () {
-    console.log(`Boarding all ${n} passengers.`);
-    console.log(`There are 3 GPs, each with ${perGroup} passengers.`);
-  }, wait * 1000);
-  console.log(`Boarding in ${wait}s.`);
-};
-const perGroup = 1000;
-boardPassengers(180, 3);
+// const boardPassengers = function (n, wait) {
+//   const perGroup = n / 3;
+//   setTimeout(function () {
+//     console.log(`Boarding all ${n} passengers.`);
+//     console.log(`There are 3 GPs, each with ${perGroup} passengers.`);
+//   }, wait * 1000);
+//   console.log(`Boarding in ${wait}s.`);
+// };
+// const perGroup = 1000;
+// boardPassengers(180, 3);
+
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+  document.querySelector('body').addEventListener('click', () => {
+    header.style.color = 'blue';
+  });
+})();
