@@ -65,47 +65,57 @@ const sabra = {
 
 // console.log(addVAT(200))
 
-const addTax = function (value) {
-  const addVAT = function () {
-    return value + value * 0.1;
-  };
-  return addVAT();
-};
-// console.log(addTax(200))
+// const addTax = function (value) {
+//   const addVAT = function () {
+//     return value + value * 0.1;
+//   };
+//   return addVAT();
+// };
+// // console.log(addTax(200))
 
-const poll = {
-  question: 'What is your favourite programming language?',
-  options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
+// const poll = {
+//   question: 'What is your favourite programming language?',
+//   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
 
-  // This generates [0, 0, 0, 0]. More in the next section!
-  answers: new Array(4).fill(0),
-  registerNewAnswer() {
-    const answer = Number(
-      prompt(
-        `${this.question}\n${this.options.join('\n')}\n(write option number)`
-      )
-    );
-    console.log(answer);
+//   // This generates [0, 0, 0, 0]. More in the next section!
+//   answers: new Array(4).fill(0),
+//   registerNewAnswer() {
+//     const answer = Number(
+//       prompt(
+//         `${this.question}\n${this.options.join('\n')}\n(write option number)`
+//       )
+//     );
+//     console.log(answer);
 
-    typeof answer === 'number' &&
-      answer < this.answers.length &&
-      this.answers[answer]++;
-    this.displayResults();
-    this.displayResults('string');
-  },
-  displayResults(type = 'array') {
-    if (type === 'array') {
-      console.log(this.answers);
-    } else if (type === 'string') {
-      console.log(`Poll results are ${this.answers}`);
-    }
-  },
-};
-// poll.registerNewAnswer();
-document
-  .querySelector('.poll')
-  .addEventListener('click', poll.registerNewAnswer.bind(poll));
+//     typeof answer === 'number' &&
+//       answer < this.answers.length &&
+//       this.answers[answer]++;
+//     this.displayResults();
+//     this.displayResults('string');
+//   },
+//   displayResults(type = 'array') {
+//     if (type === 'array') {
+//       console.log(this.answers);
+//     } else if (type === 'string') {
+//       console.log(`Poll results are ${this.answers}`);
+//     }
+//   },
+// };
+// // poll.registerNewAnswer();
+// document
+//   .querySelector('.poll')
+//   .addEventListener('click', poll.registerNewAnswer.bind(poll));
 
-// Data 1: [5, 2, 3]  Data 2: [1, 5, 3, 9, 6, 1]
-poll.displayResults.call({ answers: [5, 2, 3] }, 'string');
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'string');
+// // Data 1: [5, 2, 3]  Data 2: [1, 5, 3, 9, 6, 1]
+// poll.displayResults.call({ answers: [5, 2, 3] }, 'string');
+// poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'string');
+
+
+// const runOnce = function (){
+//   console.log('just once')
+// }
+// (function() {
+//   console.log("only once")
+// }())
+
+// (() => {console.log("only once but arrowed")})();
